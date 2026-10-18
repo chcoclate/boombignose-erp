@@ -111,7 +111,21 @@ BoomBigNose Company OS เป็น **Company OS / ERP แบบเบา ที
 - **Docker** (สำหรับรัน Supabase บนเครื่อง)
 - **Supabase CLI**
 
-### ติดตั้งและรัน (โลคัล)
+### ทางลัด: คำสั่งเดียว (แนะนำสำหรับลองเล่น)
+
+เปิด Docker Desktop ไว้ก่อน แล้วรัน:
+
+```bash
+git clone https://github.com/Boom-Vitt/boombignose-erp.git
+cd boombignose-erp
+pnpm install
+pnpm setup:local   # เปิด Supabase + migration + ข้อมูลเดโม + สร้าง .env.local ให้อัตโนมัติ
+pnpm dev           # http://localhost:3000 → กด "Use demo account"
+```
+
+`setup:local` เปิดปุ่ม **Use demo account** ให้ด้วย ใช้สำหรับลองบนเครื่องเท่านั้น
+
+### ติดตั้งและรัน (โลคัล แบบทีละขั้น)
 
 ```bash
 # 1) โคลนโปรเจกต์
