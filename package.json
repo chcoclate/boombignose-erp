@@ -14,6 +14,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "e2e": "playwright test",
+    "setup:local": "node scripts/setup-local.mjs",
     "local:up": "node scripts/local/stack.mjs up",
     "local:status": "node scripts/local/stack.mjs status",
     "local:migrate": "node scripts/local/stack.mjs migrate",
